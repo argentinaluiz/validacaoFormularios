@@ -16,7 +16,7 @@ $factory->define(\App\Client::class, function (Faker $faker) {
         'data_birth' => $faker->date(),
         'sex' => rand(1, 10) % 2 == 0 ? 'm': 'f',
         'marital_status' => rand(1, 3),
-        'physical_disability' => rand(1, 10) % 2 == 0 ? $faker->words : null,
+        'physical_disability' => rand(1, 10) % 2 == 0 ? $faker->word : null,
 
 
     ];
